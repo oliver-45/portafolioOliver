@@ -3,28 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oliver</title>
+    <title>Oliver</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Crete+Round:ital@0;1&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-    <nav class="topnav" id="myTopnav">
-         <a href="#inicio" class="active">Home</a>
-         <a href="#proyectos">Portafolio</a>
-         <a href="#acerca de mi">acerca de mi</a>
-         <a href="#contactame">contactame</a>
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars">  click   </i>
-        </a>
-    </nav>
+
+         <h2>Oliver</h2>
+         <nav>
+            <i class="fa-solid fa-bars"></i>
+         </nav>
     </header>
     <main>
-        <section id="inicio" class="inicio dark">aqui va el nombre</section>
-        <section id="proyectos">aqui va los proyectos</section>
-        <section id="acercaDeMi" class="secction white">aqui va la seccion acerca de mi</section>
-        <section id="contactame">contactame</section>
-    </main>
-    <footer>aqui va el footer</footer>
+        <section id="inicio">
+          <div class="contenidoHome">
+            <h1>Hola, <br> Soy Oliver</h1>
+            <h2 class="subtituloHome">Soy un desarrollador de software</h2>
+            <p class="descripcionHome">He trabajado en proyectos que resolvieron problemas concretos y marcaron una diferencia.
+                <br>Echa un vistazo a mi trabajo. <br> Si te gusta lo que ves y <br>tienes un proyecto en<br> mente, estaré encantado <br>de ayudarte.
+            </p>
+            <div class="RedesSociales">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+          </div> 
+        </section>
+        <section id="proyectos">Aqui va los proyectos</section>
+        <section id="acercaDeMi">
+            <div class="top">
+                <h2>Acerca de mi</h2>
+                <p>¡Hola! Soy un desarrollador de software apasionado por dar vida a tus ideas. ¿Imaginas ese producto, funcionalidad o sitio web que deseas crear? Yo puedo ayudarte a construirlo. Explora mis proyectos y experiencia… si encuentras algo que te inspire y tienes un proyecto en mente, ¡hablemos! Cada línea de código cuenta una historia, creemos una nueva. </p>
+                <button>Descarga mi CV</button>
+            </div>
+            <div class="bottom">
+                <div class="lenguajes">
+                    <div class="addSimbolo">
+                         <span>&#9670</span> 
+                         <h3>Lenguajes</h3>
+                     </div> 
+                    <div class="RomboP">
+                        <p>JavaScript</p>
+                        <p>Phyton</p>
+                        <p>SQL</p>
+                        <p>HTML/CSS</p>
+                    </div>
+                </div>
+                <div class="Frameworks">
+                    <div class="HhSimbolo">
+                        <span>&#9209</span>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="CuadradoP">
+                        <p>React</p>
+                        <p>Express</p>
+                        <p>PostgreSQL</p>
+                        <p>MongoDB</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="EsfeSimbolo">
+                        <span>&#9210</span>
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="CirculoP">
+                        <p>Vibe Coding (IA)</p>
+                        <p>Administracion de <br>Bases de Datos</p>
+                        <p>Seguridad Informatica</p>
+                        <p>Desarrollo Web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactame">
+            <form action="https://formspree.io/f/xkgbjdgw" method="post">
+  <ul>
+    <li>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+  </ul>
+  <li class="button">
+  <button type="submit">Envíe su mensaje</button>
+</li>
+</form>
+        </section>
+    <footer>Aqui va el footer</footer>
     <script src="app.js"></script>
 </body>
 </html>
